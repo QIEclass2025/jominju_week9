@@ -1,4 +1,4 @@
-\# Omok Game (Gemini Ver.)
+\# Omok Game
 
 
 
@@ -28,25 +28,25 @@
 
 1\. 레포지토리 클론 및 의존성 설치
 
-&nbsp;  git clone <레포지토리 주소>
+   git clone <레포지토리 주소>
 
-&nbsp;  uv sync
+   uv sync
 
 
 
 2\. 환경 변수 설정 (API Key)
 
-&nbsp;  Gemini API 사용을 위해 환경 변수 설정이 필수적이다.
+   Gemini API 사용을 위해 환경 변수 설정이 필수적이다.
 
-&nbsp;  - Windows (PowerShell): $Env:GEMINI\_API\_KEY = "발급받은키"
+   - Windows (PowerShell): $Env:GEMINI\_API\_KEY = "발급받은키"
 
-&nbsp;  - Mac/Linux: export GEMINI\_API\_KEY="발급받은키"
+   - Mac/Linux: export GEMINI\_API\_KEY="발급받은키"
 
 
 
 3\. 게임 실행
 
-&nbsp;  uv run omok\_game.py
+   uv run omok\_game.py
 
 
 
@@ -54,19 +54,19 @@
 
 1\. Gemini AI 연동 1인용 모드
 
-&nbsp;  - 기존의 2인용 로직에 Google Gemini API를 연동하여 1인용 대전 모드를 구현함.
+   - 기존의 2인용 로직에 Google Gemini API를 연동하여 1인용 대전 모드를 구현함.
 
-&nbsp;  - 단순 알고리즘이 아닌 LLM이 현재 보드 상태를 분석하여 착수 위치를 결정함.
+   - 단순 알고리즘이 아닌 LLM이 현재 보드 상태를 분석하여 착수 위치를 결정함.
 
 
 
 2\. 효과음(Sound Effect) 추가
 
-&nbsp;  - 돌 착수 시 청각적 피드백을 제공하여 게임 경험을 개선함.
+   - 돌 착수 시 청각적 피드백을 제공하여 게임 경험을 개선함.
 
 
 
 3\. 프로젝트 구조 개선
 
-&nbsp;  - uv 및 pyproject.toml을 도입하여 재현 가능한 개발 환경을 구성함.
+   - uv 및 pyproject.toml을 도입하여 재현 가능한 개발 환경을 구성함.
 
